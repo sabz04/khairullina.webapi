@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Аэропорт</title>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body onload="InitialFunction();">
+    <h2 id="mainLB">Аэропорт</h2>
+    <form name="airForm">
+        <input type="hidden" name="id" value="0" />
+        <label id="flight_num" for="flight_num">Номер рейса</label>
+        <div class="form-group col-md-5">
+
+            <input class="form-control" name="flight_num" />
+        </div>
+        <label for="flight_dep_post">Место отправки рейса:</label>
+        <div class="form-group col-md-5">
+           
+            <select name="flight_dep_post" class="form-control">
+                <option>Казань</option>
+                <option>Арск</option>
+                <option>Краснодар</option>
+                <option>Ижевск</option>
+                <option>Чита</option>
+                <option>Курск</option>
+                <option>Стерлитамак</option>
+                <option>Актау</option>
+                <option>Экибастуз</option>
+            </select>
+        </div>
+        <label for="flight_arr_post">Место прибытия рейса: </label>
+        <div class="form-group col-md-5">
+
+            <select name="flight_arr_post" class="form-control">
+                <option>Калининград</option>
+                <option>Екатеринбург</option>
+                <option>Новосибирск</option>
+                <option>Воронеж</option>
+                <option>Ульяновск</option>
+                <option>Нурсултан</option>
+                <option>Костанай</option>
+                <option>Уфа</option>
+                <option>Ухта</option>
+            </select>
+        </div>
+        <label for="flight_dep_time">Время отправки: </label>
+        <div class="form-group col-md-5">
+
+            <input class="form-control" name="flight_dep_time" />
+        </div>
+        <label for="flight_arr_time">Время прибытия: </label>
+        <div class="form-group col-md-5">
+
+            <input class="form-control" name="flight_arr_time" />
+        </div>
+        <div class="panel-body">
+            <button id="saveBTN" class="btn btnprimary">Сохранить</button>
+            <a id="reset" class="btn btn-primary">Сбросить</a>
+        </div>
+    </form>
+    <table class="table table-condensed table-striped col-md-6 infoPanel">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Номер рейса:</th>
+                <th>Место отправки:</th>
+                <th>Место прибытия:</th>
+                <th>Время отправки:</th>
+                <th>Время прибытия:</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
+</html>
